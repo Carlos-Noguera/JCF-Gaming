@@ -1,0 +1,133 @@
+:root{
+    --color1:#a11934;
+    --color2:#551118;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.codigo{
+    height: 100 vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.25em 0.5em 0 rgba(185, 34, 34, 0.689);
+
+}
+.code-editor{
+    width: 70%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 0 0.25em 0.5em 0 rgba(185, 34, 34, 0.689);
+}
+
+.code{
+    background-image: linear-gradient(-30deg,var(--color2),var(--color1));
+
+    display: grid;
+    width: 90%;
+    grid-template-rows: repeat(3,1fr);
+    overflow-y: auto;
+    background-color: #551118;
+    padding: 1rem;
+    border-radius:0 1rem 1rem 0;
+    justify-content: center;
+}
+
+h1{
+    font: 600 1.2rem sans-serif;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+
+span{
+	box-shadow: 0 0.25em 0.5em 0 rgba(185, 34, 34, 0.689);
+}
+
+
+h1 > img{
+    width: 1.3rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+    
+}
+.html-code{
+    width: 50vh;
+}
+
+.html-code2{
+    width: 50vh;
+}
+.html-code3{
+    width: 50vh;
+}
+
+.code textarea{
+    width: 100%;
+    height: calc(100% - 4rem);
+    background-color: #a11934;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    resize: vertical;
+    border-radius: .4rem;
+}
+hr{
+    margin: 0px;
+}
+
+#result{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #a11934;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  
+  .button span:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.6s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  
